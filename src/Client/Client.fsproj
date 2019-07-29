@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="index.html" />
+    <None Include="paket.references" />
+    <Compile Include="../Shared/Shared.fs" />
+    <Compile Include="Version.fs" />
+    <Compile Include="LoadingIndicator.fs" />
+    <Compile Include="Recipes/Types.fs" />
+    <Compile Include="Recipes/State.fs" />
+    <Compile Include="Recipes/View.fs" />
+    <Compile Include="Urls.fs" />
+    <Compile Include="Types.fs" />
+    <Compile Include="Http.fs" />
+    <Compile Include="State.fs" />
+    <Compile Include="View.fs" />
+    <Compile Include="Client.fs" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
